@@ -14,12 +14,7 @@
     <header>
         <h1>Drinks</h1>
     </header>
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="about.php">About</a>
-        <div class="fill"></div>
-        <button popovertarget="login">Login</button>
-    </nav>
+<?php require_once("_nav.php"); ?>
     <main>
         <dialog id="login" popover>
             <form action="_login.php" method="POST">
@@ -29,8 +24,6 @@
             </form>
         </dialog>
     </main>
-    <footer>
-        &copy;alice 2026
-    </footer>
+<?php require_once("_footer.php"); ?>
 </body>
 </html>
