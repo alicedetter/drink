@@ -15,6 +15,7 @@ body{
     height:100dvh;
     display:flex;
     flex-direction: column;
+    font-family: system-ui, sans-serif;
 }
 header{
     background: var(--clr_back_header);
@@ -31,6 +32,17 @@ nav{
         flex-grow: 5;
     }
     background: var(--clr_back_nav);
+    & a{
+        text-decoration: none;
+        font-weight: bold;
+        color:white;
+        border-radius: .2rem;
+        padding: .2rem .3rem;
+        background: #0003;
+    }
+    & a:hover{
+        background: #0006;
+    }
 }
 main{
     flex-grow: 5;
@@ -70,16 +82,28 @@ summary{
 
     background: #0003;
     padding: .5rem;
-    & .id{
-        width:40px;
-        font-weight: bold;
-    }
-    & .user{
-        flex-grow: 1;
-    }
-    & .level{
-        font-weight: bold;
-    }
+
+}
+.id {
+    width: 40px;
+    font-weight: bold;
+}
+
+.user {
+    flex-grow: 1;
+}
+
+.level {
+    font-weight: bold;
+}
+.realname {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.mail a{
+    font-size: 80%;
+    text-decoration: none;
 }
 details{
     background: #0001;
@@ -88,4 +112,25 @@ details{
     margin-right: auto;
 
 
+
+}
+details .userdetails{
+    display:flex;
+    & .user{
+        flex-grow:unset;
+    }
+}
+details .buttons{
+    display:flex;
+    gap:.5rem;
+    justify-content: flex-end;
+    padding: .5rem;
+    & a{
+        text-decoration: none;
+        background: #0003;
+        padding: .5rem;
+        border-radius: .5rem;}
+    & a:hover{
+        background: #0005;
+    }
 }
