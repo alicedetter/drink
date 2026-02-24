@@ -87,6 +87,8 @@ summary{
 }
 pre{
     font:1.2rem system-ui;
+    padding: 1rem;
+    background: #fff4;
 }
 .id {
     width: 40px;
@@ -110,13 +112,12 @@ pre{
     text-decoration: none;
 }
 details{
+    display:flex;
+    flex-direction: column;
     background: #0001;
     width:50%;
     margin-left: auto;
     margin-right: auto;
-
-
-
 }
 details .userdetails{
     display:flex;
@@ -188,4 +189,9 @@ button {
     margin-top: 1rem;
     margin-bottom: .6rem;
     padding: .5rem;
+}
+.ingredients, .recipe{
+    padding: .6rem;
+    background: #0001;
+    margin-top: .6rem;
 }

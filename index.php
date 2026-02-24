@@ -28,15 +28,22 @@ if(isset($_SESSION['mess'])){
 <?php while($row=mysqli_fetch_assoc($result)): ?>
 <details>
     <summary>
-    <div><h2><?=$row['drinkname']?>&nbsp;&nbsp;<span><?=isAlcoholic(intval($row['alcoholic']))?></span></h2><h4><?=$row['description']?></h4></div> <div class="filler"></div>  <div>Rated: <?=showRating($row['rating'])?></div>   
+        <div>
+            <h2><?=$row['drinkname']?>&nbsp;&nbsp;<span><?=isAlcoholic(intval($row['alcoholic']))?></span></h2>
+            <h4><?=$row['description']?></h4></div> 
+            <div class="filler"></div>  
+            <div>Rated: <?=showRating($row['rating'])?></div>   
     </summary>
     <div class="ingredients">
-    <pre><?=$row['ingredients']?>
-    </pre>
+        <pre>
+            <?=$row['ingredients']?>
+        </pre>
     </div>
-    <div class="recipe"><pre>
-    <?=$row['recipe']?>
-</pre></div>
+    <div class="recipe">
+        <pre>
+            <?=$row['recipe']?>
+        </pre>
+    </div>
 </details>
 <?php endwhile; ?>
 
