@@ -23,7 +23,7 @@ if(isset($_SESSION['mess'])){
 <h1 class="message"><?=$mess;?></h1>
 <details>
     <summary>
-    <div><h2>Screwdriver</h2><h4>Vodka and orange classic&nbsp;&nbsp;<span><?=isAlcoholic(1)?></span></h4></div> <div class="filler"></div>  <div>Rated: <?=showRating(3.500378)?></div>   
+    <div><h2>Screwdriver&nbsp;&nbsp;<span><?=isAlcoholic(1)?></span></h2><h4>Vodka and orange classic</h4></div> <div class="filler"></div>  <div>Rated: <?=showRating(3.500378)?></div>   
     </summary>
     <div class="ingredients">
     Alcoholic drink<br>
