@@ -89,6 +89,7 @@ pre{
     font:1.2rem system-ui;
     padding: 1rem;
     background: #fff4;
+    text-indent: 0;
 }
 .id {
     width: 40px;
@@ -194,4 +195,19 @@ button {
     padding: .6rem;
     background: #0001;
     margin-top: .6rem;
+}
+
+a.addDrink{
+    text-decoration: none;
+    padding: .6rem 1rem;
+    background: #0002;
+    border:1px solid #0006;
+    border-radius:10px;
+    width:fit-content;
+    font:bold 1.4rem system-ui;
+    color:#000;
+    &:hover{
+        background: #2266;
+        color:#fff;
+    }
 }

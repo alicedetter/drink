@@ -21,6 +21,7 @@ if(isset($_SESSION['mess'])){
 <?php require_once("_nav.php"); ?>
     <main>
 <h1 class="message"><?=$mess;?></h1>
+<a href="add_drink.php" class="addDrink">Add new drink!</a>
 <?php
     $sql="SELECT * FROM tbl_drinks ORDER BY rating DESC"; 
     $result=mysqli_query($conn, $sql);
