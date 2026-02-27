@@ -91,6 +91,10 @@ pre{
     background: #fff4;
     text-indent: 0;
 }
+h1.mess{
+    font:.9 system-ui;
+    background: yellow;
+}
 .id {
     width: 40px;
     font-weight: bold;

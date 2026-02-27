@@ -4,6 +4,8 @@
 $mess="";
 if(isset($_SESSION['mess'])){
     $mess=$_SESSION['mess'];
+}else{
+    $mess="";
 }
 
 ?>
