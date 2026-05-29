@@ -7,6 +7,7 @@
             <a href="drinkadmin.php">Drink Admin</a>
         <?php endif; ?>
         <?php if(!isLevel(10)):?>
+        <a href="register.php">Register</a>
         <button popovertarget="login">Login</button>
         <?php else: ?>
         <a href="_login.php?logout=1">Logout</a>    

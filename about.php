@@ -22,30 +22,9 @@ if(isset($_SESSION['mess'])){
     </header>
 <?php require_once("_nav.php"); ?>
     <main>
-<h1 class="message"><?=$mess;?></h1>
-<a href="add_drink.php" class="addDrink">Add new drink!</a>
-<?php
-    $sql="SELECT * FROM tbl_drinks ORDER BY rating DESC"; 
-    $result=mysqli_query($conn, $sql);
-?>
-<?php while($row=mysqli_fetch_assoc($result)): ?>
-<details>
-    <summary>
-        <div>
-            <h2><?=$row['drinkname']?>&nbsp;&nbsp;<span><?=isAlcoholic(intval($row['alcoholic']))?></span></h2>
-            <h4><?=$row['description']?></h4></div> 
-            <div class="filler"></div>  
-            <div>Rated: <?=showRating($row['rating'])?></div>   
-    </summary>
-    <div class="ingredients">
-        <pre><?=$row['ingredients']?></pre>
-    </div>
-    <div class="recipe">
-        <pre><?=$row['recipe']?></pre>
-    </div>
-</details>
-<?php endwhile; ?>
-
+        <h1 class="message"><?=$mess;?></h1>
+        <h2>About this website</h2>
+        <p>Welcome to our drinks website! Here you can find information about various beverages, their ingredients, and preparation methods. You can also add your own recipes and let others see them!</p>
     </main>
 <?php require_once("_footer.php"); ?>
     <dialog id="login" popover>
@@ -57,6 +36,5 @@ if(isset($_SESSION['mess'])){
             <input type="submit" name="btn_login" value="Log in">
         </form>
     </dialog>
-    
 </body>
 </html>
